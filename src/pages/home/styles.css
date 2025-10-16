@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  padding: 1rem;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.card {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  width: 100%;
+  border: 1px solid #e0e0e0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #1a1a1a;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #1a1a1a;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 2rem;
+  border: none;
+}
+
+.form label {
+  font-weight: 600;
+  color: #000;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.form-row input {
+  flex: 1;
+  padding: 10px 16px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #333;
+}
+
+.form-row input:disabled {
+  background-color: #f5f5f5;
+  color: #888;
+}
+
+.form-row button {
+  background-color: #0e1627;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.form-row button:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+.divider {
+  height: 1px;
+  background: #e0e0e0;
+  margin: 1.5rem 0;
+}
+
+.table-section {
+  margin: 1.5rem 0;
+}
+
+.section-title {
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.table-container {
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.socios-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.socios-table thead {
+  background-color: #2d3748;
+  color: white;
+}
+
+.socios-table th {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.socios-table th:last-child {
+  text-align: center;
+  width: 60px;
+}
+
+.socios-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e0e0e0;
+  color: #1a1a1a;
+}
+
+.socios-table tr:last-child td {
+  border-bottom: none;
+}
+
+.socios-table td:nth-child(3) {
+  font-weight: 600;
+}
+
+.action-cell {
+  text-align: center;
+}
+
+.view-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #1a1a1a;
+  font-size: 1.1rem;
+}
+
+.socio-section {
+  margin: 1.5rem 0;
+}
+
+.socio-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.socio-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.socio-label {
+  font-size: 0.8rem;
+  color: #000;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.socio-value {
+  font-size: 0.9rem;
+  color: #1a1a1a;
+  font-weight: 500;
+}
+
+.error-message {
+  background-color: #fee;
+  border: 1px solid #fcc;
+  color: #c33;
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: #999;
+  font-size: 0.9rem;
+  font-style: italic;
+}
